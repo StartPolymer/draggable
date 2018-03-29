@@ -1,5 +1,5 @@
 /* eslint-disable import/no-extraneous-dependencies, import/no-unresolved */
-import {Sortable} from '@shopify/draggable';
+import {Sortable, Plugins} from '@shopify/draggable';
 /* eslint-enable import/no-extraneous-dependencies, import/no-unresolved */
 
 export default function SimpleList() {
@@ -16,6 +16,7 @@ export default function SimpleList() {
     mirror: {
       constrainDimensions: true,
     },
+    plugins: [Plugins.Releasable],
   });
 
   return sortable;
