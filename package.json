@@ -20,7 +20,12 @@
   "bugs": {
     "url": "https://github.com/Shopify/draggable/issues"
   },
-  "keywords": ["shopify", "draggable", "drag-and-drop", "es6"],
+  "keywords": [
+    "shopify",
+    "draggable",
+    "drag-and-drop",
+    "es6"
+  ],
   "main": "./lib/draggable.bundle.js",
   "scripts": {
     "start": "concurrently \"yarn watch\" \"cd examples && yarn && yarn start\"",
@@ -35,7 +40,9 @@
     "build:development": "node scripts/build.js",
     "build:production": "node scripts/build.js --production"
   },
-  "files": ["lib/**/*.js"],
+  "files": [
+    "lib/**/*.js"
+  ],
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",
@@ -64,6 +71,10 @@
     "env": {}
   },
   "babel": {
-    "plugins": ["transform-class-properties", "transform-object-rest-spread", "transform-es2015-modules-commonjs"]
+    "plugins": [
+      "transform-class-properties",
+      "transform-object-rest-spread",
+      "transform-es2015-modules-commonjs"
+    ]
   }
 }
